@@ -69,9 +69,6 @@ Your submission will be automatically recorded when you push to your repository.
 - Use `print()` statements to debug
 - Ask for help if you're stuck!
 
-## Academic Honesty
-
-Remember to follow the course's academic honesty policy. Write your own code and understand every line you submit.
 ## Testing Your Code
 
 Before submitting, test each problem with `check50`:
