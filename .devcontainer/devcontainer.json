@@ -1,0 +1,14 @@
+{
+  "image": "cs50/codespace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "cs50.ddb50",
+        "cs50.extension-uninstaller",
+        "cs50.cs50-theme",
+        "github.copilot"
+      ],
+      "settings": {}
+    }
+  }
+}
