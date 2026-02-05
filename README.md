@@ -1,99 +1,94 @@
-# Week 1: Conditionals
+# Week 0: Functions, Variables
 
-This week you'll complete 5 problems that all use **conditional statements** (if, if/else, if/elif/else blocks).
-
-## Learning Resources
-
-Don't know about conditionals yet? CS50 has you covered with multiple ways to learn:
-
-### Full Lecture (1 hour)
-**Watch the complete Week 1 lecture:**  
-https://www.youtube.com/watch?v=_b6NgY_pMdw
-
-### Read the Notes
-**Skim the prepared notes if you prefer reading:**  
-https://cs50.harvard.edu/python/notes/1/
-
-### Short Videos (5-10 minutes each)
-**Watch specific topics:**
-- **Conditionals:** https://cs50.harvard.edu/python/shorts/conditionals/
-- **Boolean Expressions:** https://cs50.harvard.edu/python/shorts/boolean_expressions/
-
-### Jump Right In
-**Or just figure stuff out as you go!** The problem descriptions will guide you.
-
----
+Welcome to your first programming assignment! This week you'll complete 5 small Python problems to practice the fundamentals.
 
 ## Assignment Overview
 
-Complete **ALL** of the following problems from CS50P Week 1:
+Complete **ALL** of the following problems from CS50P Week 0:
 
-1. **Deep Thought** - The answer to life, the universe, and everything
-2. **Home Federal Savings Bank** - Greetings and money
-3. **File Extensions** - Determine media types
-4. **Math Interpreter** - A calculator program
-5. **Meal Time** - Is it time to eat?
+1. **Indoor Voice** - Convert text to lowercase
+2. **Playback Speed** - Replace spaces with ellipses
+3. **Making Faces** - Convert emoticons to emoji
+4. **Einstein** - Calculate E=mc²
+5. **Tip Calculator** - Calculate tip and total
 
----
+Full problem specifications: https://cs50.harvard.edu/python/psets/0/
 
-## Problem 1: Deep Thought
-📁 `deep/deep.py`  
-🔗 https://cs50.harvard.edu/python/psets/1/deep/
+## Before You Begin
 
-Implement a program that prompts the user for the answer to the Great Question of Life, the Universe and Everything. Output `Yes` if the user inputs `42` or (case-insensitively) `forty-two` or `forty two`. Otherwise output `No`.
+Execute `cd` by itself in your terminal window. You should find that your terminal window's prompt resembles the below:
+```
+$
+```
 
----
+## Starting Each Problem
 
-## Problem 2: Home Federal Savings Bank
-📁 `bank/bank.py`  
-🔗 https://cs50.harvard.edu/python/psets/1/bank/
+For each problem, you'll follow this same pattern. Here's an example for the first problem:
 
-Implement a program that prompts the user for a greeting:
-- If the greeting starts with `"hello"`, output `$0`
-- If the greeting starts with `"h"` (but not `"hello"`), output `$20`
-- Otherwise, output `$100`
+### Step 1: Create a folder
+```bash
+mkdir indoor
+```
 
-Ignore any leading whitespace in the user's greeting, and treat it case-insensitively.
+### Step 2: Navigate into the folder
+```bash
+cd indoor
+```
 
----
+You should now see your terminal prompt as `indoor/ $`
 
-## Problem 3: File Extensions
-📁 `extensions/extensions.py`  
-🔗 https://cs50.harvard.edu/python/psets/1/extensions/
+### Step 3: Create your Python file
+```bash
+code indoor.py
+```
 
-Implement a program that prompts the user for a file name and outputs that file's media type if the file's name ends (case-insensitively) in any of these suffixes:
+This will open a new file where you'll write your program.
 
-- `.gif`
-- `.jpg`
-- `.jpeg`
-- `.png`
-- `.pdf`
-- `.txt`
-- `.zip`
+### Repeat for Each Problem
 
-If the file's name ends with some other suffix or has no suffix at all, output `application/octet-stream`.
+Follow the same pattern for all five problems:
+- `indoor` → `indoor.py`
+- `playback` → `playback.py`
+- `faces` → `faces.py`
+- `einstein` → `einstein.py`
+- `tip` → `tip.py`
 
----
+## Submission
 
-## Problem 4: Math Interpreter
-📁 `interpreter/interpreter.py`  
-🔗 https://cs50.harvard.edu/python/psets/1/interpreter/
+When you've completed all five problems:
+1. Test each program thoroughly
+2. Commit your changes: `git add .` then `git commit -m "Complete Week 0"`
+3. Push to GitHub: `git push`
 
-Implement a program that prompts the user for an arithmetic expression and then calculates and outputs the result as a floating-point value formatted to one decimal place.
+Your submission will be automatically recorded when you push to your repository.
 
-**Assumptions:**
-- User's input will be formatted as `x y z` (with spaces)
-- `x` is an integer
-- `y` is `+`, `-`, `*`, or `/`
-- `z` is an integer
-- If `y` is `/`, then `z` will not be 0
+## Getting Help
 
-**Example:** If the user inputs `1 + 1`, your program should output `2.0`.
+- Review the problem specifications carefully
+- Test your code with the examples provided
+- Use `print()` statements to debug
+- Ask for help if you're stuck!
 
----
+## Testing Your Code
 
-## Problem 5: Meal Time
-📁 `meal/meal.py`  
-🔗 https://cs50.harvard.edu/python/psets/1/meal/
+Before submitting, test each problem with `check50`:
 
-Implement a program that prompts the user for a time and outputs whether it's breakfast time, lunch time, or dinner time. If it's not time for a meal, don't output anything at a
+```bash
+check50 cs50/problems/2022/python/indoor
+check50 cs50/problems/2022/python/playback
+check50 cs50/problems/2022/python/faces
+check50 cs50/problems/2022/python/einstein
+check50 cs50/problems/2022/python/tip
+```
+
+## Submitting
+
+Submit each problem with `submit50`:
+
+```bash
+submit50 cs50/problems/2022/python/indoor
+submit50 cs50/problems/2022/python/playback
+submit50 cs50/problems/2022/python/faces
+submit50 cs50/problems/2022/python/einstein
+submit50 cs50/problems/2022/python/tip
+```
